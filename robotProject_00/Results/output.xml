@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.5 on win32)" generated="2024-12-07T16:58:16.475425" rpa="false" schemaversion="5">
+<suite id="s1" name="Verify Search Functionality" source="C:\Users\antej\Documents\Robot\00_Robot_Test\robotProject_00\Test\ebay\Verify_Search_Functionality.robot">
+<test id="s1-t1" name="Verify Motors Link" line="39">
+<kw name="Start TestCase" owner="CommonFunctionality" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-07T16:58:16.768743" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com'.</msg>
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-07T16:58:16.767744" elapsed="3.711660"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-07T16:58:22.481011" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-07T16:58:20.479404" elapsed="2.001607"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-07T16:58:22.482012" elapsed="0.078974"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:gh-eb-Geo</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-07T16:58:22.560986" elapsed="0.147426"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-07T16:58:22.708412" level="INFO">Clicking element 'id:gh-eb-Geo-a-default'.</msg>
+<arg>id:gh-eb-Geo-a-default</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-07T16:58:22.708412" elapsed="0.068978"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:gh-eb-Geo-a-en</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-07T16:58:22.777390" elapsed="0.022992"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-07T16:58:22.800382" level="INFO">Clicking element 'id:gh-eb-Geo-a-en'.</msg>
+<arg>id:gh-eb-Geo-a-en</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-07T16:58:22.800382" elapsed="0.281498"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-07T16:58:25.083318" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-07T16:58:23.082879" elapsed="2.000439"/>
+</kw>
+<status status="PASS" start="2024-12-07T16:58:16.766744" elapsed="8.316574"/>
+</kw>
+<kw name="Click on Motors" owner="HeaderPage">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-12-07T16:58:25.084318" level="INFO">Clicking link 'link:Motors'.</msg>
+<arg>link:Motors</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-07T16:58:25.084318" elapsed="1.766539"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-07T16:58:31.851390" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-07T16:58:26.850857" elapsed="5.000533"/>
+</kw>
+<status status="PASS" start="2024-12-07T16:58:25.083318" elapsed="6.769070"/>
+</kw>
+<kw name="Verify Search Results for Button Motors" owner="SearchResultsPage">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-07T16:58:31.856388" level="INFO">Motors</msg>
+<arg>${arg_search_button_motors}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-07T16:58:31.855388" elapsed="0.001000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-12-07T16:58:31.935887" level="INFO">Current page contains text 'eBay Motors'.</msg>
+<arg>${search_button_text} ${arg_search_button_motors}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-12-07T16:58:31.857386" elapsed="0.078501"/>
+</kw>
+<arg>${search_buttons_text.search_button_motors}</arg>
+<status status="PASS" start="2024-12-07T16:58:31.853390" elapsed="0.082497"/>
+</kw>
+<kw name="Finish TestCase" owner="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-07T16:58:31.937886" elapsed="2.181285"/>
+</kw>
+<status status="PASS" start="2024-12-07T16:58:31.936887" elapsed="2.182284"/>
+</kw>
+<doc>This test vefies the Motors button link</doc>
+<tag>Prio3</tag>
+<status status="PASS" start="2024-12-07T16:58:16.766744" elapsed="17.353427"/>
+</test>
+<doc>Verify Search Functionality</doc>
+<status status="PASS" start="2024-12-07T16:58:16.477424" elapsed="17.644745"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Prio3</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Verify Search Functionality">Verify Search Functionality</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

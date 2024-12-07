@@ -1,0 +1,35 @@
+
+Tutorials form:
+https://www.youtube.com/watch?v=zcT8hSipe2A&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=1
+
+Pending Robot Framework Tutorial #24 to #42
+Selenium XPath Tutorial #1 to #11 https://www.youtube.com/watch?v=5LV4z_-91WY&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=25
+Selenium CSS Selector #1 to #8 https://www.youtube.com/watch?v=RUT6fZeLnGk&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=36
+
+Command lines to execute .robot
+* robot -d Results macaco/ArgumentsDemo.robot
+* robot --include Prio1 -d Results .\Test\ebay\Verify_Search_Functionality.robot
+* robot --include Prio1 -d Results -v env:ebay_page -v browser:chrome .\Test\ebay\Verify_Search_Functionality.robot
+
+Tutorial 13-14
+page object desing pattern
+## Headers consiten
+
+Escalar variable tutorial 15
+List variable tutoral 16
+Dictonaries variable tutorial 17
+
+Scope of variables tutorial 18
+
+Arguments tutorial 19
+
+command line varialbes tutorial 20
+
+variables in .py tutorial 21
+
+Locators tutorial 22
+
+Addons tutoria 23
+
+More locators tutorial 23
+
